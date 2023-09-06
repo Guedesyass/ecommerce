@@ -1,0 +1,431 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,600;0,800;1,600&display=swap');
+
+
+/*General*/
+*{
+    font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
+
+}
+
+a{
+    border: none;
+}
+
+.hidden {
+    display: none;
+}
+
+button {
+    border: none;
+    background-color: rgba(255, 255, 255, 0);
+    color: grey;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+/*Filtro de produtos Index*/
+#filtro{
+    display: flex;
+    width: 100%;
+}
+
+.exibir {
+    padding-left:20px
+
+}
+
+.label-filtro {
+    color: white;
+    cursor: pointer;
+    font-weight: 900;
+    width: 100px;
+    -webkit-touch-callout: none;
+    -webkit-user-select:none;
+}
+
+
+/*Carrinho index*/
+#carrinho {
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 360px;
+    background-color: rgb(230, 230, 230);
+    color: grey;
+    transition: 0.5s;
+    border-left: rgb(199, 199, 199) solid 2px;
+    border-top-left-radius: 3px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1;
+}
+
+.cabecalho-carrinho {
+    display: flex;
+    color: grey;
+    justify-content: space-between;
+    font-size: 25px;
+}
+
+.cabecalho-carrinho button {
+    font-size: 25px;
+}
+
+.cabecalho-carrinho :hover {
+   color: rgb(143, 39, 192);
+}
+
+#produtos-carrinho {
+    height: 60vh;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#produtos-carrinho::-webkit-scrollbar {
+    background-color: rgba(255, 255, 255, 0);
+}
+
+.carrinho-btn {
+    background-color: lightblue;
+    color: grey;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    font-weight: 600;
+}
+
+
+.carrinho-btn:hover {
+    background-color: rgb(63, 151, 180);
+    color: white;
+    transition: 0.2s;
+}
+
+.centralizar-btn-carrinho {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+article {
+    display: flex;
+    background-color: white;
+    border-radius: 8px;
+    align-items: center;
+    color: grey;
+    position: relative;
+}
+
+article img {
+    width: 21%;
+}
+
+.excluir {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding-top: 3px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    font-size: medium;
+}
+
+.excluir:hover {
+    color: rgb(218, 49, 133)
+}
+
+.nome-carrinho {
+    font-weight: 600;
+}
+
+#preco-total {
+    font-weight: 600;
+}
+
+.counter {
+    display: flex;
+    color: grey;
+    align-items: end;
+    height: 75%;
+    position: absolute;
+    right: 0;
+}
+
+.counter-quant{
+    margin: 2px;
+    font-size: larger;  
+}
+
+.counter-add{
+    margin: 3px;
+    font-size: larger;
+    padding-right: 7px;
+}
+
+.counter-sub{
+    margin: 2px;
+    font-size: larger;
+}
+
+/*Cabeçalho*/
+header{
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    color: grey;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#index-header {
+    display: flex;
+    background-color: rgb(230, 230, 230);
+    color: grey;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+header img {
+    width: 90px;
+    mix-blend-mode: multiply;
+    margin: 25px;
+    padding-left: 55px;
+}
+
+header img:hover {
+    width: 110px;
+    transition: 0.2s;
+    mix-blend-mode: multiply;
+}
+
+header button{
+    margin: 21px;
+    width: 50px;
+    font-size: 20px;
+
+}
+
+header button:hover {
+    width: 70px;
+    font-size: 21px;
+    transition: 0.2s;
+    color: rgb(44, 129, 241);
+}
+
+.btn {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+
+/*Seção de produtos*/
+#container-produto {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 8%;
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    border: 1px solid rgba(128, 128, 128, 0.11);
+    border-radius: 5px;
+    width: 285px;
+    margin: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 8px 5px rgba(128, 128, 128, 0.151);
+}
+
+.card img{
+    height: 280px;
+}
+
+.card img:hover{
+    height: 285px;
+    transition: 0.2s;
+}
+
+
+.card button{
+    background-color: lightgrey;
+    width: 100%;
+    height: 25px;
+    border-radius: 2px;
+    color: whitesmoke;
+}
+
+.card button:hover{
+    background-color: rgb(145, 142, 142);
+    transition: 0.2s;
+}
+
+.texto-card {
+    padding: 20px;
+    width: 91%;
+}
+
+.marca {
+    font-size:smaller;
+}
+
+.nome {
+    font-weight: 600;
+}
+
+
+/*Formulario CHECKOUT*/
+.form-checkout{
+    display: flex;
+    height: 100vh;
+    margin: 5%;
+    flex-direction: row;
+    gap: 1.5%;
+}
+
+
+ .text-usuario{
+    font-size: large;
+    font-weight: 600;
+    margin-bottom: 10px;
+    padding-top: 10%;
+    display: flex;
+    justify-content: center;
+ }
+
+ .form-container{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    width: 35%;
+ }
+
+ .inputs-usuario {
+    display: flex;
+    flex-direction: column;
+    font-size: medium;
+    font-weight: 400;
+    margin:10px;
+ }
+.inputs-usuario input {
+   height: 30px;
+   border-radius: 5px;
+   padding-top: 1.5%;
+   padding-left: 4%;
+   border: none;
+}
+
+ .inputs-pay{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+ }
+
+ #produtos-checkout {
+    height: 70%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #produtos-checkout article{
+    margin: 3%;
+ }
+
+ .quantidade-checkout {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-right: 5px;
+ }
+
+ #celula-checkout {
+    margin: 2.5%;
+ }
+
+ .carrinho-btn-checkout {
+    background-color: lightblue;
+    color: grey;
+    border-radius: 10px;
+    width: 100%;
+    height: 35px;
+    font-weight: 600;
+}
+
+
+.carrinho-btn-checkout:hover {
+    background-color: rgb(63, 151, 180);
+    color: white;
+}
+
+ .form-container-produto{
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+ }
+
+ #preco-total {
+    padding-bottom: 10px;
+ }
+
+
+ /*Seção de historico Pedidos*/
+
+ .pedido-main {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+   justify-content: center;
+   align-items: center;
+ }
+
+.pedido-data {
+    padding-top: 30px;
+    padding-bottom: 5px;
+}
+
+
+.container-pedido {
+    background-color: rgb(230, 230, 230);
+    border-radius: 5px;
+}
+
+.container-pedido article {
+    box-shadow: 8px 5px rgba(128, 128, 128, 0.151);
+    border: 1px solid rgba(128, 128, 128, 0.11);
+    border-radius: 5px;
+    width: 360px;
+}
+
+.propaganda {
+    width: 50%;
+    background-color: grey;
+}
+
+.coluna {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

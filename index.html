@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+        <title>Creamy Skincare</title>
+    </head>
+    <body>
+
+        <section id="carrinho">
+            <div class="cabecalho-carrinho">
+                <p>Meu carrinho</p>
+                <button id= "fechar-carrinho"> <i class="fa-regular fa-circle-xmark"></i> </button>
+            </div>
+        
+        <section id="produtos-carrinho">
+
+        </section>
+
+        <p id="preco-total">Total: $0</p>
+        <span class="centralizar-btn-carrinho">
+          <button class="carrinho-btn" id="carrinho-btn">Finalizar Compra</button>
+        </span>
+        
+
+        </section>
+
+        <header id="index-header">
+            <a href="/">
+                <img src="assets/img/logo.png" alt="Logo ">
+            </a>
+                 <section id= "filtro">
+                <div class= "exibir">
+                    <input id= "exibir-todos" type="radio" name="filtro" checked/>
+                    <label for ="exibir-todos" class="label-filtro ">Todos</label>
+                </div>
+                <div class= "exibir">
+                    <input id="exibir-hidratante" type="radio" name="filtro"/>
+                    <label for = "exibir-hidratante" class="label-filtro">Hidrantantes e Tratamentos Faciais</label>
+                </div>
+                <div class= "exibir">
+                    <input id="exibir-limpeza" type="radio" name="filtro"/>
+                    <label for = "exibir-limpeza" class="label-filtro">Gel de Limpeza</label>
+                </div>
+            </section>
+
+            <div class= "btn">
+                <button id="abrir-carrinho"><i class="fa-solid fa-cart-shopping"></i></button>
+                <a href="./pedidos.html">
+                    <button><i class="fa-regular fa-user"></i></button>
+                </a>
+            </div>
+        </header>
+
+        <main>
+            <section id="container-produto">
+
+            </section>
+        </main>
+
+        <script type="module" src="main.js"></script>
+    </body>
+</html>
