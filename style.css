@@ -13,22 +13,24 @@ a{
     border: none;
 }
 
-.hidden {
-    display: none;
-}
-
 button {
     border: none;
     background-color: rgba(255, 255, 255, 0);
     color: grey;
 }
 
-main {
+body {
     width: 100%;
     display: flex;
     flex-direction: column;
    justify-content: center;
    align-items: center;
+}
+main {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /*Filtro de produtos Index*/
@@ -36,6 +38,15 @@ main {
     display: flex;
     width: 100%;
 }
+
+#filtro input {
+    display: none;
+}
+
+input[type=radio]:checked + label {
+    color: rgb(152, 209, 228);
+   
+  }
 
 .exibir {
     padding-left:20px
@@ -52,6 +63,8 @@ main {
 }
 
 
+
+
 /*Carrinho index*/
 #carrinho {
     position: fixed;
@@ -61,7 +74,7 @@ main {
     width: 360px;
     background-color: rgb(230, 230, 230);
     color: grey;
-    transition: 0.5s;
+    max-width: 360px;
     border-left: rgb(199, 199, 199) solid 2px;
     border-top-left-radius: 3px;
     padding: 30px;
@@ -70,6 +83,7 @@ main {
     justify-content: space-around;
     z-index: 1;
 }
+
 
 .cabecalho-carrinho {
     display: flex;
@@ -198,6 +212,7 @@ header{
     justify-content: space-between;
     align-items: center;
     position: fixed;
+    top: 0;
     width: 100%;
 }
 
@@ -236,13 +251,22 @@ header button:hover {
 
 
 /*Seção de produtos*/
+
+.centralizar-produto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 6%;
+}
+
 #container-produto {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 8%;
     width: 100%;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .card {
@@ -428,4 +452,8 @@ header button:hover {
     justify-content: center;
     align-items: center;
     width: 100%;
+}
+
+.hidden {
+    display: none;
 }

@@ -3,11 +3,11 @@ import { catalogo, salvarLocalStorage, lerLocalStorage } from "./utilidade";
 const idsProdutoCarrinhoQuantidade = lerLocalStorage('carrinho') ?? {};
 
 function abrirCarrinho () {
-    document.getElementById("carrinho").style.width="360px"; 
+    document.getElementById("carrinho").style.display="flex"; 
 }
 
 function fecharCarrinho () {
-    document.getElementById("carrinho").style.width="0px";
+    document.getElementById("carrinho").style.display="none";
 }
 
 

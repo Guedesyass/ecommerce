@@ -4,7 +4,7 @@ import { adicionarAoCarrinho } from "./menuCarrinho";
 export function renderizarCatalogo () {
     for (const produtoCatalogo of catalogo){
         const cartaoProduto = `
-    <div class="card ${produtoCatalogo.hidratante ? "hidrantante" : "gelDeLimpeza"}" id="card-produto-@${produtoCatalogo.id}">
+    <div class="card ${produtoCatalogo.hidratante ? "hidrantante" : "gelDeLimpeza"}" id="card-produto-${produtoCatalogo.id}">
     <img src="./assets/img/${produtoCatalogo.nomeArquivoImagem}" 
     alt="Texto Alternativo">
     

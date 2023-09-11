@@ -29,11 +29,11 @@ function esconderGelLimpeza() {
 
 export function inicializarFiltros () {
     const produtoLimpeza = document.getElementById('exibir-limpeza');
-    produtoLimpeza.addEventListener('click', exibirTodos);
+    produtoLimpeza.addEventListener('click', esconderHidratante);
 
     const produtoHidratante = document.getElementById('exibir-hidratante');
-    produtoHidratante.addEventListener('click', esconderHidratante);
+    produtoHidratante.addEventListener('click', esconderGelLimpeza);
 
     const todos = document.getElementById('exibir-todos');
-    todos.addEventListener('click', esconderGelLimpeza);
+    todos.addEventListener('click', exibirTodos);
 };
